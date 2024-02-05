@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Ethans note taking app",
+    "version": "1.0",
+    "description": "A simple app for taking notes directly from your browser.",
+    "permissions": ["storage"], 
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/icon16.webp"
+      }
+    },
+    "icons": {
+      "16": "images/icon16.webp"
+    }
+  }
+  

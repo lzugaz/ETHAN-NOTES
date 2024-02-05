@@ -1,0 +1,115 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+#saveNote {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#saveNote:hover {
+    background-color: #45a049;
+}
+#app {
+    display: flex;
+    max-width: 80%; /* Adjust the max-width to a percentage of the viewport width */
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#sidebar {
+    flex: 1; /* Adjust the flex property to manage the width of the sidebar */
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    overflow-y: auto; /* Makes the sidebar scrollable */
+    height: 80vh; /* Set the height relative to the viewport height */
+}
+
+#mainContent {
+    flex: 3; /* Adjust the flex property to manage the width of the main content */
+    padding: 20px;
+}
+
+#noteList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#noteList li {
+    cursor: pointer;
+    padding: 5px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+#noteList li:hover {
+    background-color: #f0f0f0;
+}
+#deleteNote {
+    padding: 10px 15px;
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 10px; /* Space it out from the Save button */
+}
+
+#deleteNote:hover {
+    background-color: #ff7875;
+}
+
+#noteName {
+    width: 100%; /* Full width of the container */
+    padding: 10px; /* Comfortable padding */
+    margin-bottom: 10px; /* Space below the input field */
+    box-sizing: border-box; /* Ensures padding doesn't add to the width */
+    border: 1px solid #ccc; /* Subtle border styling */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 14px; /* Reasonable font size, not too large */
+    height: 40px; /* Fixed height to control the size */
+}
+
+#noteContent {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    height: 60vh; /* Set the height relative to the viewport height */
+    resize: none; 
+}
+
+.note-content {
+    resize: vertical; /* Allows the user to adjust the height */
+}
+
+#createNote {
+    background-color: black;
+    color: gold;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 20px;
+}
+
+#createNote:hover {
+    background-color: gray;
+}
